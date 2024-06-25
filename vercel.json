@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "vite.config.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/images/(.*)",
+      "dest": "/assets/images/$1"
+    }
+  ]
+}
